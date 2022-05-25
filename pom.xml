@@ -14,8 +14,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>FFOS-Spring_sample</name>
     <description>FFOS-Spring_sample</description>
+
     <properties>
         <java.version>17</java.version>
+        <infobip-api-java-client.version>3.2.0</infobip-api-java-client.version>
+        <spring-web.version>5.3.20</spring-web.version>
     </properties>
     <dependencies>
         <dependency>
@@ -25,25 +28,31 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.3.20</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.infobip</groupId>
+            <artifactId>infobip-api-java-client</artifactId>
+            <version>${infobip-api-java-client.version}</version>
         </dependency>
     </dependencies>
 

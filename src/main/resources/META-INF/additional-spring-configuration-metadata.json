@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "phone.numbers",
+      "type": "java.lang.String",
+      "description": "This is comma-separated list of phone.numbers."
+    }
+  ] }

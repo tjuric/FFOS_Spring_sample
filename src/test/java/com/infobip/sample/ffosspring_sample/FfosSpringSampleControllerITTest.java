@@ -18,8 +18,9 @@ public class FfosSpringSampleControllerITTest {
     private TestRestTemplate template;
 
     @Test
-    public void getHello() throws Exception {
+    public void getHello() {
         ResponseEntity<String> response = template.getForEntity("/", String.class);
-        assertThat(response.getBody()).isEqualTo("Pozdrav FFOS-u iz Spring Boot aplikacije!");
+        assertThat(response.getBody()).isEqualTo("Pozdrav FFOS-u iz Spring Boot aplikacije! <br/>" +
+                "Brojevi na koje će se slati SMS: +385997778888,+385951112222");
     }
 }
