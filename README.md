@@ -5,5 +5,5 @@ This is a sample project to showcase:
 - How to expose REST API controller
 - How to send a message over some REST API (Infobip's API)
 
-Prerequisits:
+Prerequisites:
 - Java 17 (or some other - change version in pom.xml) installed
